@@ -1,0 +1,12 @@
+/* 2014-2014(c) | cm.css
+ * cm.css ::  version 1.0 
+ *
+ * This style sheet caters for IE 5 browsers. 
+ */
+
+/*
+ * auto-centering in IE 5
+ * we reset this value in the next rule so content is left aligned. 
+ */
+.cm-logo{}
+.ui-menu { width: 150px; }
