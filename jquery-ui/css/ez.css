@@ -10,8 +10,9 @@
  * we reset this value in the next rule so content is left aligned. 
  */
  
-body {text-align: center;}
-
+body {
+	text-align: center;
+}
 /* 
  * This wrapper, first child of body, is used to wrap "ez-css" modules. 
  * It will auto-center if it is given a width smaller than the width of the viewport.
@@ -33,7 +34,9 @@ body {text-align: center;}
  * to make sure modules clear previous containers
  */
 
-.ez-wr {clear: left;}
+.ez-wr {
+	clear: left;
+}
 
 /*
  * this is the clearfix method
@@ -124,6 +127,7 @@ body {text-align: center;}
  * here we have 5 default values: 1/4, 1/3, 1/2, 2/3 and 3/4
  */
 
+.ez-5  {width: 5%;}
 .ez-15 {width: 15%;}
 .ez-25 {width: 25%;}
 .ez-33 {width: 33.33%;}
