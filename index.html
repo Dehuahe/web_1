@@ -1,75 +1,324 @@
-<!DOCTYPE html>
-<html>
+
+<!doctype html>
+<html dir="ltr" lang="EN">
 <head>
-	<link rel="stylesheet" href="jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css" />
-	<script src="jquery-ui/js/jquery-1.10.2.js"></script>
-	<script src="jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>
-	<!--<script src="jquery-ui/js/jquery-ui-1.10.4.custom.min.js"></script>-->
-	<link rel="stylesheet" type="text/css" media="screen,projection" href="jquery-ui/css/ez.css"/>
-	<link rel="stylesheet" type="text/css" href="jquery-ui/css/cm.css"/>
-	<!--<script src="jquery.js"></script>-->
-	
-	<script>
-		//$(document).ready(
-		//	function(){});
-	</script>
-    <script>
-    $(function() {
-      $( "#menu" ).menu();
-    });
-	$(function() {
-	        var len = $(".ez-wr").length;
-	        var index;
-	        var time;
-	        $(".ez-wr").mousemove(function() {
-	            index = $(".ez-wr").index(this);
-	            show(index);
-	        }).eq(0).mousemove();
-	      //  $(".zzjs_2").hover(function() {
-	      //      clearInterval(time);
-	      //  }, function() {
-	      //      time = setInterval(function() {
-	      //          show(index)
-	      //          index++;
-	      //          if (index == len) { index = 0; }
-	      //      }, 2000);
-	      //  }).trigger("mouseleave");
-	    })
-	    function show(index) {
-	      //  $(".ez-wr").eq(index).show().siblings().hide();
-	      //  $(".ez-wr").css("background", "url(/img/20110112zzjs_net_1.gif)").eq(index).css("background", "url(/img/20110112zzjs_net_2.gif)");
-	    }
-    </script>
-</head>
-<body background="images/logo.png">
-<!-- Layout 3 -->	
-<div class="ez-wr">
-  <div class="ez-box">
-  	<div class="ez-fl">
-  		<!--<img src="images/logo.png" width="248" height="108" />-->
-  	</div>
-  </div>
-  <div class="ez-mw">
-	
-  </div>
-    <!-- Module 3A -->
-  <div class="ez-wr">
-    <div class="ez-fl  ez-negmx ez-75">
-        <div class="ez-box ez-mw ez-negml ">Industrial and Cozy</div>
-		<div class="ez-box ez-mw ">Designing cafes with a tribute to wood, metal, and warmth</div>
-    </div>
-    <div class="ez-last ez-oh ">
-  	<ul id="menu">
-  	  <li class="ui-state-disabled"><a href="#">Aberdeen</a></li>
-  	  <li><a href="#">Ada</a></li>
-  	  <li><a href="#">Adamsville</a></li>
-  	  <li><a href="#">Addyston</a></li>		
-  	  <li><a href="#">AMister</a></li> 
-  	</ul>
-    </div>
-  </div>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, minimal-ui">
+  <meta http-equiv="description" content="abc">
+  <meta http-equiv="keywords" content="abc">
+
+  <title>My website</title>
+<!--
+  <link type="text/plain" rel="author" href="author.txt" />
+  <link rel="shortcut icon" href="favicon.ico">
+-->
+  <link rel="stylesheet" href="jquery-ui/css/cafe.css">
+
+  <script type="text/javascript" src="jquery-ui/js/cafe.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script scr="jquery-ui/js/modernizr.min.js"></script>
+  <script>
   
-</div>
-				
+    (function(i,s,o,g,r,a,m){
+		i['GoogleAnalyticsObject']=r;
+		i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+		a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+		a.async=1;
+		a.src=g;
+		m.parentNode.insertBefore(a,m);
+    })
+	(window,document,'script','//http://www.google-analytics.com/analytics.js');
+    ga('create', 'UA-33863507-1', 'http://caffebeneusa.com');
+    ga('send', 'pageview');
+  
+  </script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header dark">
+      <div class="container clearfix">
+        <a href="#" id="Logo" style="background:url(images/green-springs-png/Spring-Plants.png) no-repeat;"><h1>Caffe Bene</h1></a>
+        <nav class="nav">
+          <ul>
+            <li><a href="#" data-hover="About">About</a></li>
+            <li><a href="#" data-hover="News" class="news">News</a></li>
+            <li><a href="#" data-hover="Menu">Menu</a></li>
+            <li><a href="#" data-hover="Careers">Careers</a></li>
+            <li><a href="#" data-hover="Contact">Contact</a></li>
+            <li><a href="#" target="_blank" class="btn btn-white">Franchise</a></li>
+          </ul>
+        </nav>
+        <!-- Hamburger -->
+        <a class="toggle-nav" href="javascript:void(0);">
+          <div class="hamburger"></div>
+        </a>
+		
+      </div>
+    </header>
+    <!-- Display this nav on devices 
+    <nav class="nav mobile-nav">
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#" class="btn btn-white">Franchise</a></li>
+      </ul>
+    </nav>
+-->
+		
+    <section class="section dark first table" style="background:url(images/5-14041R12217.jpg) repeat center;" >
+	
+      <div class="background-overlay"></div>
+      <div class="container">
+        <div class="content">
+			
+          <h2 class="headline">Welcome to my website</h2>
+			
+		  
+          <a class="btn btn-play md-trigger" data-modal="modal-1">
+            <div class="play-border">
+              <div class="play-button"></div>
+            </div>
+            <span>Watch our video</span>
+          </a>
+			  
+          <!-- Play on Mobile -->
+          <div class="mobile-video">
+            <iframe src="#" width="150" height="84" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+			  
+        </div>
+      </div>
+  
+    </section>
+	
+    <section class="section dark second" style="background:url(images/13950333336032.jpg) repeat center;">
+      <div class="background-overlay"></div>
+      <div class="container">
+        <div class="content">
+          <h2>Global and Growing</h2>
+          <p class="font-large">Opening 1,300 cafes in 5 years</p>
+          <a class="btn btn-white" href="#" target="_blank">Apply Now</a>
+          <div class="store-counter">
+            <h5><img class="icon-store" src="images/build-png/books.png" alt="cb"/> Store Total</h5>
+            <span> 1337</span>
+          </div>
+        </div>
+
+        <div class="country-group just">
+          <div class="country">
+            <img class="flag" src="images/build-png/add.png" alt="cb-korea">
+            <div class="country-info">
+              <h6>Korea</h6>
+              <label>945 Stores</label>
+            </div>
+          </div>
+
+          <div class="country">
+            <img class="flag" src="images/build-png/alert.png" alt="cb-usa">
+            <div class="country-info">
+              <h6>United States</h6>
+              <label>86 Stores</label>
+            </div>
+          </div>
+
+          <div class="country">
+            <img class="flag" src="images/build-png/gift.png" alt="cb-china">
+            <div class="country-info">
+              <h6>China</h6>
+              <label>283 Stores</label>
+            </div>
+          </div>
+
+          <div class="country">
+            <img class="flag" src="images/build-png/books.png" alt="cb-philippines">
+            <div class="country-info">
+              <h6>Philippines</h6>
+              <label>5 Stores</label>
+            </div>
+          </div>
+
+          <div class="country">
+            <img class="flag" src="images/build-png/books.png" alt="cb-indonesia">
+            <div class="country-info">
+              <h6>Indonesia</h6>
+              <label>5 Stores</label>
+            </div>
+          </div>
+
+          <div class="country">
+            <img class="flag" src="images/build-png/books.png" alt="cb-saudi">
+            <div class="country-info">
+              <h6>Saudi Arabia</h6>
+              <label>4 Stores</label>
+            </div>
+          </div>
+
+          <div class="country">
+            <img class="flag" src="images/build-png/books.png" alt="cb-mongolia">
+            <div class="country-info">
+              <h6>Mongolia</h6>
+              <label>2 Stores</label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark third" style="background:url(images/5-14041R12217.jpg) repeat center;">
+      <div class="background-overlay"></div>
+      <div class="container">
+        <div class="content">
+          <h2>Quality and Taste</h2>
+          <p class="font-large">Picking, roasting, and blending beans with care</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark fourth" style="background:url(images/5-14041R12217.jpg) repeat center;">
+      <div class="background-overlay"></div>
+      <div class="container">
+        <div class="content">
+          <h2>Savory and Sweet Variety</h2>
+          <p class="font-large">Serving an eclectic menu of sandwiches and desserts</p>
+          <a class="btn btn-inverse" href="#">See our menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark fifth" style="background:url(images/5-14041R12217.jpg) repeat center;">
+      <div class="background-overlay"></div>
+      <div class="container">
+        <div class="content">
+          <h2>Industrial and Cozy</h2>
+          <p class="font-large">Designing cafes with a tribute to wood, metal, and warmth</p>
+          <a class="btn btn-inverse" href="#">See our locations</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section dark footer" style="background:url(images/5-14041R12217.jpg) repeat center;">
+      <div class="background-overlay"></div>
+      <div class="container">
+        <div class="content">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="content-group">
+          <div class="location just">
+            <div class="col ny">
+              <h3>New York</h3>
+              <address>1430 Broadway Suite 1503, <br>New York, NY 10018</address>
+              <p><label>Franchise</label> +1 844-220-2363</p>
+              <p><label>Office</label> +1 212-575-5484</p>
+            </div>
+            <div class="col la">
+              <h3>Los Angeles</h3>
+              <address>5670 Wilshire Blvd #760, <br>Los Angeles, CA 90036</address>
+              <p><label>Franchise</label> +1 844-833-3500</p>
+              <p><label>Office</label> +1 323-933-3500</p>
+            </div>
+            <div class="col social">
+              <h3>Follow Us</h3>
+              <ul>
+                <li><a href="#" target="_blank">Facebook</a></li>
+                <li><a href="#" target="_blank">Twitter</a></li>
+                <li><a href="#" target="_blank">Google +</a></li>
+                <li><a href="#" target="_blank">Youtube</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="credits just">
+          <div class="company">
+            <p>Copyright &copy; 2014 Caffe Bene</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Fixed Footer -->
+    <div class="global-flags">
+      <div class="container just clearfix">
+        <div class="store-counter">
+          <h5>Store Total</h5>
+          <span><img class="icon-store" src="images/build-png/home.png" alt="cb-icon"/> 1337</span>
+        </div>
+        <div class="flag-wrap">
+          <a class="arrow-left" href="#"></a> 
+          <a class="arrow-right" href="#"></a>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="flag" src="images/build-png/home.png" alt="cb-korea">
+                <div class="country-info">
+                  <h6>Korea</h6>
+                  <label>945 Stores</label>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="flag" src="images/build-png/tag.png" alt="cb-usa">
+                <div class="country-info">
+                  <h6>USA</h6>
+                  <label>86 Stores</label>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="flag" src="images/build-png/medal-silver.png" alt="cb-china">
+                <div class="country-info">
+                  <h6>China</h6>
+                  <label>283 Stores</label>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="flag" src="images/build-png/guitar.png" alt="cb-philippines">
+                <div class="country-info">
+                  <h6>Philippines</h6>
+                  <label>5 Stores</label>
+                </div>
+              </div>            
+           
+            </div>  
+          </div>
+        </div>
+        <div class="contact">
+          <ul class="just">
+            <li>
+              <h6>New York</h6>
+              <p><label>Franchise</label> +1 844-220-2363</p>
+              <p><label>Office</label> +1 212-575-5484</p>
+            </li>
+            <li>
+              <h6>Los Angeles</h6>
+              <p><label>Franchise</label> +1 844-833-3500</p>
+              <p><label>Office</label> +1 323-933-3500</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="md-modal md-effect-1" id="modal-1">
+      <div class="md-content">
+		  <!--
+        <iframe src="//player.vimeo.com/video/90181718?title=0&amp;byline=0&amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			  -->
+      </div>
+      <a class="md-close">Close <span>&times;</span></a>
+    </div>
+    <div class="md-overlay"></div>
+  </div>
+
+  <!-- Javascript -->
+  <script src="jquery-ui/js/jquery-1.9.1.js"></script>
+  <script src="jquery-ui/js/home.js"></script>
+
+
 </body>
 </html>
